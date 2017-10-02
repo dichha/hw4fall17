@@ -1,0 +1,8 @@
+%h1 Sign-up
+= form_tag users_path do
+    = label :user, :user_id, "User-ID", :id => "signupUser"
+    = text_field :user, 'user_id'
+    
+    = label :user, :email, "E-Mail", :id => "signupEmail"
+    = text_field :user, 'email'
+    = button_to 'Create my account', users_path, class: "btn btn-primary", id: "SignupCreate"
